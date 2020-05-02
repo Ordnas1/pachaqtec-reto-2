@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Reto dos</title>
+    <script src="https://kit.fontawesome.com/62433110b3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">
-            <div class="elipse"></div>
-            <div class="elipse-front">A</div>
-        </div>
+        <img class="navbar-logo" src="images/LOGO.png" alt="" width="48" height="32">
         <ul>
-            <li class="current"><a href="">Home</a></li>
+            <li><a class="current" href="">Home</a></li>
             <li><a href="">Espectáculo</a></li>
             <li><a href="">Deportes</a></li>
         </ul>
@@ -26,33 +24,39 @@
     </header>
     <main>
         <form action="">
-            <input type="text" name="searchbar" id="searchbar" placeholder="Search article" pattern=>
+            <input 
+            type="text" 
+            name="searchbar" 
+            id="searchbar" 
+            placeholder="&#xF002 Search article"
+            style="">
         </form>
         <section class="popular">
             <h2>Popular</h2>
-            <article class="popular-article-main">
-                <div class="popular-article-text">
-                    <section class="popular-summary">
-                        <h3>Feugiat sodales at nullam tellus.</h3>
-                        <p class="summary-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum at repudiandae, 
-                            sint earum rem corporis libero recusandae accusantium, dolore officiis provident magni fuga suscipit ex eligendi
-                            expedita voluptatem nesciunt distinctio.
-                        </p>
-                    </section>
-                    <div class="popular-summary-footer">
-                        <div class="popular-info">
-                            <p class="popular-author">Samantha Leuthex</p>
-                            <p class="popular-timestamp">May 5, 3 min read</p>
-                        </div>
-                        <div class="popular-fa">
-                            FA goes here
+            <div class="popular-grid">
+                <article class="popular-article-main">
+                    <img src="images/img-post-1.png" alt="" width="540" height="380">
+                    <div class="popular-article-text">
+                        <section class="popular-summary">
+                            <h3>Feugiat sodales at nullam tellus.</h3>
+                            <p class="summary-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum at repudiandae, 
+                                sint earum rem corporis libero recusandae accusantium, dolore officiis provident magni fuga suscipit ex eligendi
+                                expedita voluptatem nesciunt distinctio.
+                            </p>
+                        </section>
+                        <div class="popular-summary-footer">
+                            <div class="popular-info">
+                                <p class="popular-author">Samantha Leuthex</p>
+                                <p class="popular-timestamp">May 5, 3 min read</p>
+                            </div>
+                            <div class="popular-fa">
+                                <i class="fas fa-bookmark"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <img src="images/img-post-1.png" alt="">
-            </article>
-            <div class="popular-article-container">
+                </article>
                 <article class="popular-article">
                     <img src="images/img-post-2.png" alt="">
                     <div class="popular-article-text">
@@ -70,7 +74,8 @@
                                 <p class="popular-timestamp">May 5, 3 min read</p>
                             </div>
                             <div class="popular-fa">
-                                FA goes here
+                                <i class="fas fa-bookmark"></i>
+                                <i class="fas fa-share-alt"></i>
                             </div>
                         </div>
                     </div>
@@ -92,7 +97,8 @@
                                 <p class="popular-timestamp">May 5, 3 min read</p>
                             </div>
                             <div class="popular-fa">
-                                FA goes here
+                                <i class="fas fa-bookmark"></i>
+                                <i class="fas fa-share-alt"></i>
                             </div>
                         </div>
                     </div>
@@ -114,13 +120,14 @@
                                 <p class="popular-timestamp">May 5, 3 min read</p>
                             </div>
                             <div class="popular-fa">
-                                FA goes here
+                                <i class="fas fa-bookmark"></i>
+                                <i class="fas fa-share-alt"></i>
                             </div>
                         </div>
                     </div>
                 </article>
             </div>
-            <a>See all popular articles</a>
+            <p class="seeall-pop">See all popular articles</p>
             <hr>
         </section>
         <section class="all-article">
@@ -141,8 +148,9 @@
                             <p class="main-author">Samantha Leuthex</p>
                             <p class="main-timestamp">May 5, 3 min read</p>
                         </div>
-                        <div class="main-fa">
-                            FA goes here
+                        <div class="popular-fa">
+                            <i class="fas fa-bookmark"></i>
+                            <i class="fas fa-share-alt"></i>
                         </div>
                     </div>
                 </div>
@@ -163,8 +171,9 @@
                             <p class="main-author">Samantha Leuthex</p>
                             <p class="main-timestamp">May 5, 3 min read</p>
                         </div>
-                        <div class="main-fa">
-                            FA goes here
+                        <div class="popular-fa">
+                            <i class="fas fa-bookmark"></i>
+                            <i class="fas fa-share-alt"></i>
                         </div>
                     </div>
                 </div>
@@ -184,8 +193,9 @@
                             <p class="main-author">Samantha Leuthex</p>
                             <p class="main-timestamp">May 5, 3 min read</p>
                         </div>
-                        <div class="main-fa">
-                            FA goes here
+                        <div class="popular-fa">
+                            <i class="fas fa-bookmark"></i>
+                            <i class="fas fa-share-alt"></i>
                         </div>
                     </div>
                 </div>
@@ -205,8 +215,9 @@
                             <p class="main-author">Samantha Leuthex</p>
                             <p class="main-timestamp">May 5, 3 min read</p>
                         </div>
-                        <div class="main-fa">
-                            FA goes here
+                        <div class="popular-fa">
+                            <i class="fas fa-bookmark"></i>
+                            <i class="fas fa-share-alt"></i>
                         </div>
                     </div>
                 </div>
@@ -226,8 +237,9 @@
                             <p class="main-author">Samantha Leuthex</p>
                             <p class="main-timestamp">May 5, 3 min read</p>
                         </div>
-                        <div class="main-fa">
-                            FA goes here
+                        <div class="popular-fa">
+                            <i class="fas fa-bookmark"></i>
+                            <i class="fas fa-share-alt"></i>
                         </div>
                     </div>
                 </div>
